@@ -1,4 +1,4 @@
-FROM openjdk:17-oracle
+FROM azul/zulu-openjdk-alpine:17.0.1-jre
 WORKDIR /app
 COPY build/libs/llm-dev-demo-0.0.1-SNAPSHOT.jar /app/app.jar
 RUN apk add --update font-adobe-100dpi ttf-dejavu fontconfig
